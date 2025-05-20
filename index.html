@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .product-modal {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+<nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-2xl font-semibold">
+                    <i class="fab fa-apple"></i>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#iphone" class="hover:text-gray-300 transition duration-300">iPhone</a>
+                    <a href="#ipad" class="hover:text-gray-300 transition duration-300">iPad</a>
+                    <a href="#mac" class="hover:text-gray-300 transition duration-300">Mac</a>
+                    <a href="#watch" class="hover:text-gray-300 transition duration-300">Watch</a>
+                    <a href="#airpods" class="hover:text-gray-300 transition duration-300">AirPods</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+            <div class="flex flex-col space-y-2">
+                <a href="#iphone" class="hover:text-gray-300 transition duration-300">iPhone</a>
+                <a href="#ipad" class="hover:text-gray-300 transition duration-300">iPad</a>
+                <a href="#mac" class="hover:text-gray-300 transition duration-300">Mac</a>
+                <a href="#watch" class="hover:text-gray-300 transition duration-300">Watch</a>
+                <a href="#airpods" class="hover:text-gray-300 transition duration-300">AirPods</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-cover bg-center h-96 flex items-center"
+        style="background-image: url('https://www.apple.com/newsroom/images/environments/stores/apple_nso-marina-bay-sands_exterior_09072020_Full-Bleed-Image.jpg.large.jpg')">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Discover Amazing Apple Products</h1>
+        <p class="text-xl text-white mb-8">Innovative technology designed for your life</p>
+        <a href="#products"
+           class="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">Explore
+            Products</a>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 py-12">
+    <section id="products" class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Products</h2>
+
+        <div id="iphone" class="mb-16">
+            <h3 class="text-2xl font-semibold mb-6 border-l-4 border-blue-500 pl-3">iPhone</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="iphone-15-pro">
+                    <img src="/iphone-11-white.jpg" alt="iPhone 15 Pro" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPhone 15 Pro</h4>
+                        <p class="text-gray-600">From $999</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Available in 4 colors</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="iphone-15">
+                    <img src="/iphone-11-white.jpg" alt="iPhone 15" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPhone 15</h4>
+                        <p class="text-gray-600">From $799</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Available in 5 colors</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="iphone-14">
+                    <img src="/iphone-11-white.jpg" alt="iPhone 14" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPhone 14</h4>
+                        <p class="text-gray-600">From $699</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Available in 5 colors</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="iphone-se">
+                    <img src="/iphone-11-white.jpg" alt="iPhone SE" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPhone SE</h4>
+                        <p class="text-gray-600">From $429</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Available in 3 colors</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ipad" class="mb-16">
+            <h3 class="text-2xl font-semibold mb-6 border-l-4 border-green-500 pl-3">iPad</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="ipad-pro">
+                    <img src="/SG-iPad_Air_Wi-Fi_10.9_in_Space_Gray_PDP_Image_Position-2_6c73eee0-95a3-4cd2-92b1-e6da67c2c33f_1024x1024@2x.webp"
+                         alt="iPad Pro" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPad Pro</h4>
+                        <p class="text-gray-600">From $799</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">M2 chip</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="ipad-air">
+                    <img src="/SG-iPad_Air_Wi-Fi_10.9_in_Space_Gray_PDP_Image_Position-2_6c73eee0-95a3-4cd2-92b1-e6da67c2c33f_1024x1024@2x.webp"
+                         alt="iPad Air" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPad Air</h4>
+                        <p class="text-gray-600">From $599</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">M1 chip</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="ipad-10">
+                    <img src="/SG-iPad_Air_Wi-Fi_10.9_in_Space_Gray_PDP_Image_Position-2_6c73eee0-95a3-4cd2-92b1-e6da67c2c33f_1024x1024@2x.webp"
+                         alt="iPad 10th gen" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">iPad 10th gen</h4>
+                        <p class="text-gray-600">From $449</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">A14 Bionic</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="watch" class="mb-16">
+            <h3 class="text-2xl font-semibold mb-6 border-l-4 border-green-500 pl-3">Watch</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="watch-series-9">
+                    <img src="/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-nc-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR.jpg"
+                         alt="Apple Watch Series 9" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">Apple Watch Series 9</h4>
+                        <p class="text-gray-600">From $399</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">S9 chip</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="watch-se">
+                    <img src="/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-nc-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR.jpg"
+                         alt="Apple Watch SE" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">Apple Watch SE</h4>
+                        <p class="text-gray-600">From $249</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">S8 chip</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="watch-nike">
+                    <img src="/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-nc-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR.jpg"
+                         alt="Apple Watch Nike" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">Apple Watch Nike</h4>
+                        <p class="text-gray-600">From $399</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Exclusive bands</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+        <div id="airpods" class="mb-16">
+            <h3 class="text-2xl font-semibold mb-6 border-l-4 border-yellow-500 pl-3">AirPods</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="airpods-pro">
+                    <img src="/airpods-pro-2-hero-select-202409_FMT_WHH.jpg" alt="AirPods Pro"
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">AirPods Pro</h4>
+                        <p class="text-gray-600">$249</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Active Noise Cancellation</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="airpods-3">
+                    <img src="/airpods-pro-2-hero-select-202409_FMT_WHH.jpg" alt="AirPods 3rd gen"
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">AirPods 3rd gen</h4>
+                        <p class="text-gray-600">$179</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Spatial Audio</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="airpods-2">
+                    <img src="/airpods-pro-2-hero-select-202409_FMT_WHH.jpg" alt="AirPods 2nd gen"
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">AirPods 2nd gen</h4>
+                        <p class="text-gray-600">$129</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">Double-tap control</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition duration-300"
+                     data-product="airpods-max">
+                    <img src="/airpods-pro-2-hero-select-202409_FMT_WHH.jpg" alt="AirPods Max"
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">AirPods Max</h4>
+                        <p class="text-gray-600">$549</p>
+                        <div class="flex justify-between mt-4">
+                            <span class="text-sm text-gray-500">High-fidelity audio</span>
+                            <span class="text-blue-500 hover:underline">Details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Compare Products</h2>
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <p class="text-center text-gray-600 mb-6">Select up to 3 products to compare their features and
+                    specifications side by side.</p>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <select id="product-category"
+                            class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select Category</option>
+                        <option value="iphone">iPhone</option>
+                        <option value="ipad">iPad</option>
+                        <option value="watch">Apple Watch</option>
+                        <option value="airpods">AirPods</option>
+                    </select>
+
+                    <select id="product-1"
+                            class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select First Product</option>
+                    </select>
+
+                    <select id="product-2"
+                            class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select Second Product</option>
+                    </select>
+
+                    <select id="product-3"
+                            class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select Third Product (Optional)</option>
+                    </select>
+
+                    <button id="compare-btn"
+                            class="bg-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                        Compare
+                    </button>
+                </div>
+
+                <div id="comparison-table" class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                        <tr class="bg-gray-100">
+                            <th class="p-4 text-left border">Features</th>
+                            <th id="product1-header" class="p-4 text-left border">Product 1</th>
+                            <th id="product2-header" class="p-4 text-left border">Product 2</th>
+                            <th id="product3-header" class="p-4 text-left border">Product 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="p-4 border font-semibold">Price</td>
+                            <td id="price-1" class="p-4 border">-</td>
+                            <td id="price-2" class="p-4 border">-</td>
+                            <td id="price-3" class="p-4 border">-</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-4 border font-semibold">Processor</td>
+                            <td id="processor-1" class="p-4 border">-</td>
+                            <td id="processor-2" class="p-4 border">-</td>
+                            <td id="processor-3" class="p-4 border">-</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border font-semibold">Display</td>
+                            <td id="display-1" class="p-4 border">-</td>
+                            <td id="display-2" class="p-4 border">-</td>
+                            <td id="display-3" class="p-4 border">-</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-4 border font-semibold">Camera</td>
+                            <td id="camera-1" class="p-4 border">-</td>
+                            <td id="camera-2" class="p-4 border">-</td>
+                            <td id="camera-3" class="p-4 border">-</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border font-semibold">Battery</td>
+                            <td id="battery-1" class="p-4 border">-</td>
+                            <td id="battery-2" class="p-4 border">-</td>
+                            <td id="battery-3" class="p-4 border">-</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-4 border font-semibold">Storage</td>
+                            <td id="storage-1" class="p-4 border">-</td>
+                            <td id="storage-2" class="p-4 border">-</td>
+                            <td id="storage-3" class="p-4 border">-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="recommendation" class="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-100 hidden">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Our Recommendation</h3>
+                    <p id="recommendation-text" class="text-gray-700"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                    <span>How do I choose the right iPhone for me?</span>
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer px-4 pb-4 hidden">
+                    <p>Consider your budget, desired screen size, camera quality, and performance needs. The iPhone 15
+                        Pro offers the best performance and camera system, while the iPhone SE provides excellent value.
+                        Visit our store for personalized recommendations.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                    <span>What's the difference between iPad models?</span>
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer px-4 pb-4 hidden">
+                    <p>iPad Pro is our most powerful tablet with the M2 chip, ideal for professionals. iPad Air balances
+                        performance and portability with the M1 chip. The standard iPad offers great value for everyday
+                        use, while the iPad mini gives you iPad power in a compact form factor.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                    <span>Do AirPods work with Android devices?</span>
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer px-4 pb-4 hidden">
+                    <p>Yes, AirPods work with Android devices as standard Bluetooth headphones. However, some features
+                        like automatic switching between devices, audio sharing, and "Hey Siri" functionality are
+                        exclusive to Apple devices.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                    <span>What warranty comes with Apple products?</span>
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </button>
+                <div class="faq-answer px-4 pb-4 hidden">
+                    <p>All new Apple products come with a one-year limited warranty and up to 90 days of complimentary
+                        technical support. You can extend your coverage with AppleCare+ for additional hardware
+                        protection and technical support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="bg-gray-200 py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-gray-600 mb-6">Subscribe to our newsletter for the latest Apple product news and exclusive
+                offers.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Your email address"
+                       class="px-4 py-3 rounded-lg w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit"
+                        class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Shop and Learn</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Store</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mac</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">iPad</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">iPhone</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Watch</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">AirPods</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Music</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple TV+</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Fitness+</a>
+                    </li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple News+</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Arcade</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">iCloud</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Apple Store</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Find a Store</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Genius Bar</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Today at Apple</a>
+                    </li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Camp</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Store App</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">About Apple</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Newsroom</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apple Leadership</a>
+                    </li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Career
+                        Opportunities</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Investors</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Ethics &
+                        Compliance</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Events</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 text-gray-400 text-sm">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Apple Inc. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Terms of Use</a>
+                    <a href="#" class="hover:text-white transition duration-300">Sales Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Legal</a>
+                    <a href="#" class="hover:text-white transition duration-300">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+    <div class="modal-overlay absolute inset-0 bg-black opacity-50"></div>
+    <div class="product-modal relative bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 max-h-screen overflow-y-auto">
+        <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times text-xl"></i>
+        </button>
+        <div id="modal-content" class="p-6">
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const productCategory = document.getElementById('product-category');
+        const product1Select = document.getElementById('product-1');
+        const product2Select = document.getElementById('product-2');
+        const product3Select = document.getElementById('product-3');
+        const compareBtn = document.getElementById('compare-btn');
+        const recommendationDiv = document.getElementById('recommendation');
+
+        const productSpecs = {
+            'iphone-15-pro': {
+                name: 'iPhone 15 Pro',
+                price: 'From $999',
+                processor: 'A17 Pro chip',
+                display: '6.1" Super Retina XDR',
+                camera: '48MP Main, Ultra Wide, Telephoto',
+                battery: 'Up to 29 hours',
+                storage: '128GB - 1TB'
+            },
+            'iphone-15': {
+                name: 'iPhone 15',
+                price: 'From $799',
+                processor: 'A16 Bionic chip',
+                display: '6.1" Super Retina XDR',
+                camera: '48MP Main, Ultra Wide',
+                battery: 'Up to 26 hours',
+                storage: '128GB - 512GB'
+            },
+            'iphone-14': {
+                name: 'iPhone 14',
+                price: 'From $699',
+                processor: 'A15 Bionic chip',
+                display: '6.1" Super Retina XDR',
+                camera: '12MP Main, Ultra Wide',
+                battery: 'Up to 20 hours',
+                storage: '128GB - 512GB'
+            },
+            'iphone-se': {
+                name: 'iPhone SE',
+                price: 'From $429',
+                processor: 'A15 Bionic chip',
+                display: '4.7" Retina HD',
+                camera: '12MP Wide',
+                battery: 'Up to 15 hours',
+                storage: '64GB - 256GB'
+            },
+            'ipad-pro': {
+                name: 'iPad Pro',
+                price: 'From $799',
+                processor: 'M2 chip',
+                display: '11" or 12.9" Liquid Retina XDR',
+                camera: 'Pro camera system with LiDAR',
+                battery: 'Up to 10 hours',
+                storage: '128GB - 2TB'
+            },
+            'ipad-air': {
+                name: 'iPad Air',
+                price: 'From $599',
+                processor: 'M1 chip',
+                display: '10.9" Liquid Retina',
+                camera: '12MP Ultra Wide front',
+                battery: 'Up to 10 hours',
+                storage: '64GB - 256GB'
+            },
+            'ipad-10': {
+                name: 'iPad 10th gen',
+                price: 'From $449',
+                processor: 'A14 Bionic chip',
+                display: '10.9" Liquid Retina',
+                camera: '12MP Ultra Wide front',
+                battery: 'Up to 10 hours',
+                storage: '64GB - 256GB'
+            },
+            'watch-series-9': {
+                name: 'Apple Watch Series 9',
+                price: 'From $399',
+                processor: 'S9 SiP',
+                display: '41mm or 45mm Always-On Retina',
+                camera: 'N/A',
+                battery: 'Up to 18 hours',
+                storage: '64GB'
+            },
+            'watch-se': {
+                name: 'Apple Watch SE',
+                price: 'From $249',
+                processor: 'S8 SiP',
+                display: '40mm or 44mm Retina',
+                camera: 'N/A',
+                battery: 'Up to 18 hours',
+                storage: '32GB'
+            },
+            'airpods-pro': {
+                name: 'AirPods Pro',
+                price: '$249',
+                processor: 'H2 chip',
+                display: 'N/A',
+                camera: 'N/A',
+                battery: 'Up to 6 hours (30 with case)',
+                storage: 'N/A'
+            },
+            'airpods-3': {
+                name: 'AirPods 3rd gen',
+                price: '$179',
+                processor: 'H1 chip',
+                display: 'N/A',
+                camera: 'N/A',
+                battery: 'Up to 6 hours (30 with case)',
+                storage: 'N/A'
+            }
+        };
+
+        const categoryProducts = {
+            'iphone': ['iphone-15-pro', 'iphone-15', 'iphone-14', 'iphone-se'],
+            'ipad': ['ipad-pro', 'ipad-air', 'ipad-10'],
+            'watch': ['watch-series-9', 'watch-se', 'watch-nike'],
+            'airpods': ['airpods-pro', 'airpods-3', 'airpods-2', 'airpods-max']
+        };
+
+        productCategory.addEventListener('change', function () {
+            const category = this.value;
+
+            product1Select.innerHTML = '<option value="">Select First Product</option>';
+            product2Select.innerHTML = '<option value="">Select Second Product</option>';
+            product3Select.innerHTML = '<option value="">Select Third Product (Optional)</option>';
+
+            if (category && categoryProducts[category]) {
+                categoryProducts[category].forEach(productId => {
+                    if (productSpecs[productId]) {
+                        const option = document.createElement('option');
+                        option.value = productId;
+                        option.textContent = productSpecs[productId].name;
+                        product1Select.appendChild(option.cloneNode(true));
+                        product2Select.appendChild(option.cloneNode(true));
+                        product3Select.appendChild(option.cloneNode(true));
+                    }
+                });
+            }
+        });
+
+        compareBtn.addEventListener('click', function () {
+            const product1 = product1Select.value;
+            const product2 = product2Select.value;
+            const product3 = product3Select.value;
+
+            if (!product1 || !product2) {
+                alert('Please select at least two products to compare');
+                return;
+            }
+
+            document.getElementById('product1-header').textContent = productSpecs[product1].name;
+            document.getElementById('product2-header').textContent = productSpecs[product2].name;
+            document.getElementById('product3-header').textContent = product3 ? productSpecs[product3].name : 'Not Selected';
+
+            document.getElementById('price-1').textContent = productSpecs[product1].price;
+            document.getElementById('price-2').textContent = productSpecs[product2].price;
+            document.getElementById('price-3').textContent = product3 ? productSpecs[product3].price : '-';
+
+            document.getElementById('processor-1').textContent = productSpecs[product1].processor;
+            document.getElementById('processor-2').textContent = productSpecs[product2].processor;
+            document.getElementById('processor-3').textContent = product3 ? productSpecs[product3].processor : '-';
+
+            document.getElementById('display-1').textContent = productSpecs[product1].display;
+            document.getElementById('display-2').textContent = productSpecs[product2].display;
+            document.getElementById('display-3').textContent = product3 ? productSpecs[product3].display : '-';
+
+            document.getElementById('camera-1').textContent = productSpecs[product1].camera;
+            document.getElementById('camera-2').textContent = productSpecs[product2].camera;
+            document.getElementById('camera-3').textContent = product3 ? productSpecs[product3].camera : '-';
+
+            document.getElementById('battery-1').textContent = productSpecs[product1].battery;
+            document.getElementById('battery-2').textContent = productSpecs[product2].battery;
+            document.getElementById('battery-3').textContent = product3 ? productSpecs[product3].battery : '-';
+
+            document.getElementById('storage-1').textContent = productSpecs[product1].storage;
+            document.getElementById('storage-2').textContent = productSpecs[product2].storage;
+            document.getElementById('storage-3').textContent = product3 ? productSpecs[product3].storage : '-';
+
+            recommendationDiv.classList.remove('hidden');
+            const recommendationText = document.getElementById('recommendation-text');
+
+            const category = productCategory.value;
+            if (category === 'iphone') {
+                recommendationText.textContent = 'For the best balance of features and value, we recommend the iPhone 15. If you need pro-level camera capabilities and the latest technology, the iPhone 15 Pro is worth the premium price.';
+            } else if (category === 'ipad') {
+                recommendationText.textContent = 'For creative professionals, the iPad Pro with M2 chip offers unmatched performance. For everyday users, the iPad Air provides an excellent balance of features and affordability.';
+            } else if (category === 'watch') {
+                recommendationText.textContent = 'Apple Watch Series 9 offers the most complete experience, while Apple Watch SE is perfect for first-time users or those on a budget.';
+            } else if (category === 'airpods') {
+                recommendationText.textContent = 'AirPods Pro are recommended for users who value noise cancellation and comfort, while AirPods 3rd generation offer great sound at a more accessible price point.';
+            }
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+
+                answer.classList.toggle('hidden');
+
+                icon.classList.toggle('rotate-180', !answer.classList.contains('hidden'));
+            });
+        });
+
+        const productCards = document.querySelectorAll('.product-card');
+        const productModal = document.getElementById('product-modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalOverlay = document.querySelector('.modal-overlay');
+        const modalContent = document.getElementById('modal-content');
+
+        const productData = {
+            'iphone-15-pro': {
+                name: 'iPhone 15 Pro',
+                price: 'From $999',
+                colors: ['Natural Titanium', 'Blue Titanium', 'White Titanium', 'Black Titanium'],
+                description: 'iPhone 15 Pro is the most advanced iPhone ever. Featuring a stunning new titanium design, the powerful A17 Pro chip, a revolutionary camera system, and a customizable Action Button. Experience performance that outpaces even some laptops.',
+                specs: [
+                    'A17 Pro chip with 6-core CPU and 6-core GPU',
+                    'Pro camera system: 48MP Main, Ultra Wide, Telephoto',
+                    'Super Retina XDR display with ProMotion and Always-On',
+                    'Up to 29 hours of video playback',
+                    'USB-C connector with USB 3 speeds',
+                    'Ceramic Shield front, titanium design with textured matte glass back'
+                ]
+            },
+            'iphone-15': {
+                name: 'iPhone 15',
+                price: 'From $799',
+                colors: ['Pink', 'Yellow', 'Green', 'Blue', 'Black'],
+                description: 'iPhone 15 brings powerful features and amazing performance in a perfect 6.1-inch size. With Dynamic Island, a 48MP camera, and the A16 Bionic chip, you get incredible capabilities without compromise.',
+                specs: [
+                    'A16 Bionic chip with 6-core CPU and 5-core GPU',
+                    'Advanced dual-camera system: 48MP Main, Ultra Wide',
+                    'Super Retina XDR display with Dynamic Island',
+                    'Up to 26 hours of video playback',
+                    'USB-C connector',
+                    'Ceramic Shield front, aluminum design with color-infused glass back'
+                ]
+            },
+            'iphone-14': {
+                name: 'iPhone 14',
+                price: 'From $699',
+                colors: ['Blue', 'Purple', 'Midnight', 'Starlight', 'Product(RED)'],
+                description: 'iPhone 14 features a durable design and a new dual-camera system that captures stunning photos in all kinds of light. With amazing battery life and critical safety features, iPhone 14 has you covered when it matters.',
+                specs: [
+                    'A15 Bionic chip with 6-core CPU and 5-core GPU',
+                    'Advanced dual-camera system: 12MP Main, Ultra Wide',
+                    'Super Retina XDR display',
+                    'Up to 20 hours of video playback',
+                    'Lightning connector',
+                    'Ceramic Shield front, aluminum design with glass back'
+                ]
+            },
+            'iphone-se': {
+                name: 'iPhone SE',
+                price: 'From $429',
+                colors: ['Midnight', 'Starlight', 'Product(RED)'],
+                description: 'iPhone SE gives you a powerful A15 Bionic chip, 5G, and a superb camera in a compact 4.7-inch design. With the familiar Home button and Touch ID, iPhone SE is an incredible value.',
+                specs: [
+                    'A15 Bionic chip with 6-core CPU and 4-core GPU',
+                    '12MP Wide camera with Portrait mode and Smart HDR 4',
+                    '4.7-inch Retina HD display',
+                    'Up to 15 hours of video playback',
+                    'Lightning connector',
+                    'Home button with Touch ID'
+                ]
+            },
+            'ipad-pro': {
+                name: 'iPad Pro',
+                price: 'From $799',
+                colors: ['Silver', 'Space Gray'],
+                description: 'The ultimate iPad experience with the blazing-fast M2 chip. Featuring an immersive Liquid Retina XDR display, advanced cameras, super-fast wireless connectivity, Thunderbolt port, and Apple Pencil hover.',
+                specs: [
+                    'M2 chip with 8-core CPU and 10-core GPU',
+                    '11-inch or 12.9-inch Liquid Retina display with ProMotion',
+                    'Pro camera system with Wide, Ultra Wide, and LiDAR Scanner',
+                    'Up to 10 hours of web surfing on Wi-Fi',
+                    'USB-C connector with Thunderbolt / USB 4 support',
+                    'Compatible with Apple Pencil (2nd generation) and Magic Keyboard'
+                ]
+            },
+            'ipad-air': {
+                name: 'iPad Air',
+                price: 'From $599',
+                colors: ['Space Gray', 'Starlight', 'Pink', 'Purple', 'Blue'],
+                description: 'Serious performance in a thin and light design. With the power of the M1 chip, a stunning Liquid Retina display, and support for Apple Pencil and Magic Keyboard, iPad Air is ready for anything.',
+                specs: [
+                    'M1 chip with 8-core CPU and 8-core GPU',
+                    '10.9-inch Liquid Retina display',
+                    '12MP Ultra Wide front camera with Center Stage',
+                    'Up to 10 hours of web surfing on Wi-Fi',
+                    'USB-C connector',
+                    'Compatible with Apple Pencil (2nd generation) and Magic Keyboard'
+                ]
+            },
+            'ipad-10': {
+                name: 'iPad 10th generation',
+                price: 'From $449',
+                colors: ['Silver', 'Blue', 'Pink', 'Yellow'],
+                description: 'The completely redesigned iPad features an all-screen design, the A14 Bionic chip, a stunning 10.9-inch Liquid Retina display, and compatibility with Apple Pencil and Magic Keyboard Folio.',
+                specs: [
+                    'A14 Bionic chip with 6-core CPU and 4-core GPU',
+                    '10.9-inch Liquid Retina display',
+                    '12MP Ultra Wide front camera with Center Stage',
+                    'Up to 10 hours of web surfing on Wi-Fi',
+                    'USB-C connector',
+                    'Compatible with Apple Pencil (1st generation) and Magic Keyboard Folio'
+                ]
+            },
+            'ipad-mini': {
+                name: 'iPad mini',
+                price: 'From $499',
+                colors: ['Space Gray', 'Pink', 'Purple', 'Starlight'],
+                description: 'iPad mini brings the full iPad experience to a compact design. With the A15 Bionic chip, a stunning Liquid Retina display, and Apple Pencil support, iPad mini delivers incredible performance in the palm of your hand.',
+                specs: [
+                    'A15 Bionic chip with 6-core CPU and 5-core GPU',
+                    '8.3-inch Liquid Retina display',
+                    '12MP Ultra Wide front camera with Center Stage',
+                    'Up to 10 hours of web surfing on Wi-Fi',
+                    'USB-C connector',
+                    'Compatible with Apple Pencil (2nd generation)'
+                ]
+            },
+            'macbook-pro': {
+                name: 'MacBook Pro',
+                price: 'From $1999',
+                colors: ['Space Gray', 'Silver'],
+                description: 'Our most powerful notebooks featuring the M3 Pro or M3 Max chip. With extraordinary battery life, a stunning Liquid Retina XDR display, and all the ports you need, MacBook Pro is the ultimate tool for professionals.',
+                specs: [
+                    'M3 Pro or M3 Max chip',
+                    '14-inch or 16-inch Liquid Retina XDR display',
+                    'Up to 36GB unified memory with M3 Pro',
+                    'Up to 96GB unified memory with M3 Max',
+                    'Up to 22 hours of battery life',
+                    'HDMI port, SDXC card slot, MagSafe 3, Thunderbolt 4'
+                ]
+            },
+            'macbook-air': {
+                name: 'MacBook Air',
+                price: 'From $999',
+                colors: ['Midnight', 'Starlight', 'Space Gray', 'Silver'],
+                description: 'Our thinnest and lightest notebook, now supercharged with the M3 chip. MacBook Air combines incredible performance with up to 18 hours of battery life in a fanless design.',
+                specs: [
+                    'M3 chip with 8-core CPU and up to 10-core GPU',
+                    '13.6-inch or 15.3-inch Liquid Retina display',
+                    'Up to 24GB unified memory',
+                    'Up to 18 hours of battery life',
+                    'MagSafe 3 charging port, Two Thunderbolt ports',
+                    'Magic Keyboard with Touch ID'
+                ]
+            },
+            'imac': {
+                name: 'iMac',
+                price: 'From $1299',
+                colors: ['Blue', 'Green', 'Pink', 'Silver', 'Yellow', 'Orange', 'Purple'],
+                description: 'The strikingly thin, all-in-one desktop now featuring the M3 chip. With a stunning 24-inch 4.5K Retina display, 1080p FaceTime HD camera, and studio-quality mics, iMac is a creative powerhouse.',
+                specs: [
+                    'M3 chip with 8-core CPU and up to 10-core GPU',
+                    '24-inch 4.5K Retina display',
+                    'Up to 24GB unified memory',
+                    '1080p FaceTime HD camera with M3 image signal processor',
+                    'Six-speaker sound system with force-cancelling woofers',
+                    'Magic Keyboard with Touch ID'
+                ]
+            },
+            'mac-mini': {
+                name: 'Mac mini',
+                price: 'From $599',
+                colors: ['Silver'],
+                description: 'The most affordable Mac desktop now with the M2 chip. Mac mini delivers a massive boost in performance in an ultracompact design, making it perfect for everything from everyday tasks to intensive workloads.',
+                specs: [
+                    'M2 chip with 8-core CPU and 10-core GPU',
+                    'Up to 24GB unified memory',
+                    'Up to 2TB storage',
+                    'Two Thunderbolt 4 ports, Two USB-A ports, HDMI port',
+                    'Gigabit Ethernet (configurable to 10Gb Ethernet)',
+                    'Built-in speaker'
+                ]
+            },
+            'watch-ultra': {
+                name: 'Apple Watch Ultra',
+                price: 'From $799',
+                colors: ['Titanium with various band options'],
+                description: 'The most rugged and capable Apple Watch ever, designed for endurance, exploration, and adventure. With a titanium case, precision dual-frequency GPS, up to 36 hours of battery life, and three specialized bands.',
+                specs: [
+                    '49mm titanium case with flat sapphire crystal',
+                    'Always-On Retina display, up to 2000 nits brightness',
+                    'Action button for instant access to features',
+                    'Dual-frequency GPS for precise location',
+                    'Water resistant to 100m',
+                    'Up to 36 hours of battery life, up to 60 hours in Low Power Mode'
+                ]
+            },
+            'watch-series-9': {
+                name: 'Apple Watch Series 9',
+                price: 'From $399',
+                colors: ['Aluminum: Midnight, Starlight, Silver, Product(RED), Pink', 'Stainless Steel: Gold, Silver, Graphite'],
+                description: 'Apple Watch Series 9 features our most powerful chip ever in an Apple Watch. With a new double-tap gesture, a brighter display, and health insights, it’s a significant upgrade to the world\'s best-selling smartwatch.',
+                specs: [
+                    'S9 SiP with 64-bit dual-core processor',
+                    '41mm or 45mm case size',
+                    'Always-On Retina display, up to 2000 nits brightness',
+                    'Temperature sensing, Depth gauge, and Compass',
+                    'High and low heart rate notifications',
+                    'Emergency SOS and Fall Detection'
+                ]
+            },
+            'watch-se': {
+                name: 'Apple Watch SE',
+                price: 'From $249',
+                colors: ['Midnight, Starlight, Silver'],
+                description: 'Apple Watch SE has all the essential features to help you stay connected, track your fitness, monitor your health, and keep you safe. Now up to 20% faster with the same great battery life.',
+                specs: [
+                    'S8 SiP with 64-bit dual-core processor',
+                    '40mm or 44mm case size',
+                    'Retina display',
+                    'Optical heart sensor',
+                    'Emergency SOS and Fall Detection',
+                    'Water resistant to 50m'
+                ]
+            },
+            'watch-nike': {
+                name: 'Apple Watch Nike',
+                price: 'From $399',
+                colors: ['Aluminum with Nike Sport Band or Nike Sport Loop'],
+                description: 'Apple Watch Nike brings the power of Series 9 together with exclusive Nike watch faces and bands. With a Nike Sport Band or Nike Sport Loop, it’s the perfect running partner.',
+                specs: [
+                    'S9 SiP with 64-bit dual-core processor',
+                    '41mm or 45mm case size',
+                    'Always-On Retina display with Nike watch faces',
+                    'Nike Run Club app with guided runs',
+                    'Advanced running metrics',
+                    'Exclusive Nike bands and watch faces'
+                ]
+            },
+            'airpods-pro': {
+                name: 'AirPods Pro',
+                price: '$249',
+                colors: ['White'],
+                description: 'AirPods Pro feature Active Noise Cancellation, Transparency mode, and Adaptive EQ for an unmatched wireless audio experience. With a customizable fit and water resistance, they’re perfect for any activity.',
+                specs: [
+                    'Active Noise Cancellation and Transparency mode',
+                    'Adaptive EQ automatically tunes music to your ears',
+                    'Spatial Audio with dynamic head tracking',
+                    'Up to 6 hours of listening time with a single charge',
+                    'MagSafe Charging Case with up to 30 hours total listening time',
+                    'Sweat and water resistant'
+                ]
+            },
+            'airpods-3': {
+                name: 'AirPods (3rd generation)',
+                price: '$179',
+                colors: ['White'],
+                description: 'AirPods (3rd generation) deliver an unparalleled wireless experience with Spatial Audio, Adaptive EQ, and a contoured design. With longer battery life and sweat and water resistance, they’re ready for all your listening needs.',
+                specs: [
+                    'Spatial Audio with dynamic head tracking',
+                    'Adaptive EQ automatically tunes music to your ears',
+                    'Force sensor for easy control of entertainment and calls',
+                    'Up to 6 hours of listening time with a single charge',
+                    'MagSafe Charging Case with up to 30 hours total listening time',
+                    'Sweat and water resistant'
+                ]
+            },
+            'airpods-2': {
+                name: 'AirPods (2nd generation)',
+                price: '$129',
+                colors: ['White'],
+                description: 'The iconic wireless headphones that deliver an effortless listening experience. With quick access to Siri, clear audio quality, and a charging case with over 24 hours of battery life, AirPods set the standard for wireless earbuds.',
+                specs: [
+                    'Powered by the H1 headphone chip',
+                    'Rich, high-quality audio',
+                    'Voice-activated "Hey Siri"',
+                    'Double-tap to play, skip forward',
+                    'Up to 5 hours of listening time on one charge',
+                    'Charging case delivers more than 24 hours of battery life'
+                ]
+            },
+            'airpods-max': {
+                name: 'AirPods Max',
+                price: '$549',
+                colors: ['Space Gray', 'Silver', 'Sky Blue', 'Pink', 'Green'],
+                description: 'AirPods Max combine high-fidelity audio with Active Noise Cancellation, Transparency mode, and Spatial Audio. With a breathable knit mesh canopy and acoustically engineered memory foam ear cushions, they deliver the ultimate personal listening experience.',
+                specs: [
+                    'Apple-designed dynamic driver provides high-fidelity audio',
+                    'Active Noise Cancellation blocks outside noise',
+                    'Transparency mode for hearing the world around you',
+                    'Spatial Audio with dynamic head tracking',
+                    'Up to 20 hours of listening time with ANC enabled',
+                    'Digital Crown for precise volume control and playback'
+                ]
+            }
+        };
+        productCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const productId = card.getAttribute('data-product');
+                const product = productData[productId];
+
+                if (product) {
+                    let modalHtml = `
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <img src="/IMG_2028-1-1024x1024.webp" alt="${product.name}" class="w-full h-auto rounded-lg">
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">${product.name}</h2>
+                                <p class="text-xl text-blue-600 mb-4">${product.price}</p>
+                                <p class="text-gray-600 mb-6">${product.description}</p>
+
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-2">Available Colors</h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        ${product.colors.map(color => `<span class="px-3 py-1 bg-gray-100 rounded-full text-sm">${color}</span>`).join('')}
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-2">Key Specifications</h3>
+                                    <ul class="list-disc pl-5 space-y-2">
+                                        ${product.specs.map(spec => `<li>${spec}</li>`).join('')}
+                                    </ul>
+                                </div>
+
+                                <div class="flex space-x-4">
+                                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">Buy Now</button>
+                                    <button class="border border-blue-500 text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">Add to Bag</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    modalContent.innerHTML = modalHtml;
+                    productModal.classList.remove('hidden');
+
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            closeProductModal();
+        });
+
+        modalOverlay.addEventListener('click', () => {
+            closeProductModal();
+        });
+
+        function closeProductModal() {
+            productModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !productModal.classList.contains('hidden')) {
+                closeProductModal();
+            }
+        });
+    });
+</script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</body>
+</html>
